@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weathers</title>
+</head>
+
+<body onload="DefaultScreen()">
+
+    <form class="search">
+        <input type="text" placeholder="Search" aria-label="Search" class="city" id="city">
+        <button type="button" class="btn" id="submit" onclick="getInfo()">Search</button>
+    </form>
+
+    <div class="cityNam">
+        <h1 id="cityName"></h1>
+    </div>
+    <div class="weatherContainer">
+        <div class="iconsContainer">
+            <div class="icon">
+                <p class="weather" id="day1"></p>
+                <p class="minvalue" id="day1Min">loading...</p>
+                <p class="maxvalue" id="day1Max">loading...</p>
+            </div>
+            <div class="icon">
+                <p class="weather" id="day2"></p>
+                <p class="minvalue" id="day2Min">loading...</p>
+                <p class="maxvalue" id="day2Max">loading...</p>
+            </div>
+            <div class="icon">
+                <p class="weather" id="day3"></p>
+                <p class="minvalue" id="day3Min">loading...</p>
+                <p class="maxvalue" id="day3Max">loading...</p>
+            </div>
+            <div class="icon">
+                <p class="weather" id="day4"></p>
+                <p class="minvalue" id="day4Min">loading...</p>
+                <p class="maxvalue" id="day4Max">loading...</p>
+            </div>
+            <div class="icon">
+                <p class="weather" id="day5"></p>
+                <p class="minvalue" id="day5Min">loading...</p>
+                <p class="maxvalue" id="day5Max">loading...</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
